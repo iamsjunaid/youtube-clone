@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+     
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 15px;
+    background-color: gray;
+    color: #fff;
+}
+
+.side-bar {
+    height: 100%;
+    width: 17%;
+    background-color: #fff;
+    overflow-y: hidden;
+    float: right;
+}
+
+.header img{
+    width: 120px;
+    height: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .side-bar {
+        display: none;
+    }
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left #menu {
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+}
+
+.search form {
+    display: flex;
+    border: 1px solid #ddd;
+    height: 45px;
+    border-radius: 50px;
+    outline: none;
+}
+
+.search input {
+    width: 600px;
+    padding: 10px;
+    border: 0;
+    height: 100%;
+    border-radius: 40px 0 0 40px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #ddd;
+}
+
+.search button {
+    height: 100%;
+    width: 60px;
+    border: none;
+    border-radius: 0 40px 40px 0;
+    background-color: darkgrey; 
+    color: #fff;
+}
+
+.mic {
+    margin-top: 10px;
+}
+
+.material-icons {
+    color: #fff;
+    padding: 0 7px;
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: darkgrey; 
+    color: #fff;
+}
+
+.side-bar{
+    background-color: gray;
+    padding: 5px;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    
+}
+
+.side-bar a{
+    text-decoration: none;
+    color: #fff;
+    /* width: 50%; */
+   
+}
+
+.video-suggestions{
+    overflow: hidden;
+    margin-right: 10px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.video-suggestions a{
+    
+    /* margin-top: 10px; */
+}
+
+.bottom-content{
+    background-color: gray;
+    width: 720;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+}
